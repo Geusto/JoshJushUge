@@ -6,8 +6,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Titulo</title>
+<style>
+    body{
+        background-color: #ffffff;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='0' %3E%3Crect fill='%23F5F5F5' x='-60' y='-60' width='110' height='240'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    iframe{
+        width: 600px;
+        aspect-ratio: 16/9;
+    }
+    footer div{
+        width: 100%;
+        border: 3px solid red;
+        background-color: black;
 
+        h1{
+            color: white;
+        }
+    }
+    </style>
+    <title>Titulo</title>
 </head>
 
 
@@ -16,18 +34,58 @@
     <header>
         <nav>
             <a target="_blank" href="https:\\www.google.com">enlace a google</a>
-            <a href="/Joshua.html">enlace a joshua</a>
+            <a href="/joshua.html">enlace a joshua</a>
             <a href="/julio.html">enlace a julio</a>
         </nav> 
     </header>
 
+    <br>
+    <!-- formulario -->
 
+    <input type="text" placeholder="Nombre">
+    <br>
+    <input type="tel" placeholder="Telefono">
+    <br>
+    <input type="email" placeholder="correo">
+    <br>
+    <textarea cols="16" rows="6" placeholder="mensaje">
+    </textarea>
+    <br>
+    <select >
+        <option value="">seleccione uno</option>
+        <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="asd">check1</label>
+    <input type="checkbox" id="asd">
+    <label for="">check2</label>
+    <input type="checkbox">
+    <label for="">check3</label>
+    <input type="checkbox">
+    <br>
 
-    <input type="text">
+    <label for="julio">julio</label>
+    <input type="radio" name="nombres" id="julio">
 
-    <textarea cols="6"></textarea>
-
+    <label for="uge">uge</label>
+    <input type="radio" name="nombres" id="uge">
+    <label for="joshua">joshua</label>
+    <input type="radio" name="nombres" id="joshua">
+    <br>
+    <br>
     <button>botón</button>
+
+    <br>
+    <br>
+
+    <iframe src="https://www.youtube.com/embed/RIclRFmOwjI" allowfullscreen></iframe>
 
 
 
@@ -97,7 +155,9 @@
 
 
 <footer>
-
+    <div class="footerContent">
+        <h1>titulo contenedor footer</h1>
+    </div>
 </footer>
 
 
