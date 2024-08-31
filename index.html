@@ -24,6 +24,18 @@
             color: white;
         }
     }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    td, th {
+        border: 1px solid #000;
+        text-align: left;
+        padding: 8px;
+    }
+    /* tr:nth-child(even) {
+        background-color: #dddddd;
+    } */
     </style>
     <title>Titulo</title>
 </head>
@@ -38,6 +50,62 @@
             <a href="/julio.html">enlace a julio</a>
         </nav> 
     </header>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cargo</th>
+                <th style="width: 100px;">Sueldo</th>
+                <!-- el mismo numero de celdas del thead serán el mismo del tbody -->
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr>
+                <td>Eugenio</td>
+                <td>administrador</td>
+                <td>$1.000.000</td>
+            </tr>
+            <tr>
+                <td>Julio</td>
+                <td>desarrollador</td>
+                <td>$2.000.000</td>
+            </tr>
+            <tr>
+                <td>Joshua</td>
+                <td>desarrollador</td>
+                <td>$2.100.000</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td rowspan="2"><h3>titulo</h3> <p>parrafo</p></td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <!-- <td>2</td> -->
+                <td>3</td>
+            </tr>
+            <tr>
+                <th>celda vacia</th>
+                <th colspan="2">celda colspan2</th>
+            </tr>
+            <tr>
+                <th colspan="2">celda colspan2</th>
+                <th>celda vacia</th>
+            </tr>
+
+        </tbody>
+    
+        <tfoot>
+            <tr >
+                <!-- colspan = añadir un tamaño a la celda dependiendo del numero de columnas -->
+                <td colspan="3"># de empleados: 3</td>
+            </tr>
+        </tfoot>
+    
+    </table>
 
     <br>
     <!-- formulario -->
@@ -148,7 +216,28 @@
 
 
 
+
     </main>
+
+    
+    <table>
+        <!-- cabecera -->
+        <thead>
+            <tr><!--fila-->
+                <th></th> <!--celda con titulo o header-->
+            </tr>
+        </thead>
+        <!-- cuerpo -->
+        <tbody>
+            <td></td><!--celda normal-->
+        </tbody>
+        <!-- piecera -->
+        <tfoot>
+            <tr>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
 
 
 </body>
